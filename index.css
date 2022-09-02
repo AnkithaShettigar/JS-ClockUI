@@ -8,32 +8,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .bg {
+  .block {
     background-color: white;
     height: 130px;
     border-radius: 10px;
   }
-  .bg-1,
-  .bg-2 {
-    position: absolute;
-  }
-  .bg-1 {
-    width: 379px;
-    height: 130px;
-    opacity: 0.22;
-    top: 3rem;
-    right: 5rem;
-    z-index: -1;
-  }
-  .bg-2 {
-    width: 416px;
-    height: 130px;
-    opacity: 0.71;
-    top: 2rem;
-    right: 4rem;
-    z-index: -2;
-  }
-  .bg-3 {
+  .block1 {
     position: relative;
     top: 1rem;
     width: 536px;
@@ -43,18 +23,46 @@ body {
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    margin-right: -55px;
   }
-  
-  .sub-container1 {
+  .block2,
+  .block3 {
+    position: absolute;
+  }
+  .block2 {
+    width: 379px;
+    height: 130px;
+    opacity: 0.22;
+    margin-right: -50px;
+    top: 3rem;
+    right: 5rem;
+    z-index: -1;
+
+  }
+  .block3 {
+    width: 416px;
+    height: 130px;
+    opacity: 0.71;
+    top: 2rem;
+    right: 4rem;
+    margin-right: -50px;
+    z-index: -2;
+  }
+ 
+    .container {
+    margin: 2rem ;
+  }
+  .container1 {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     width: 68rem;
   }
-  .container {
-    margin: 2rem ;
+  .container2{
+    display: flex;
   }
-  .digital-clock {
+
+  .clock {
     position: relative;
   }
   .time {
@@ -81,7 +89,7 @@ body {
   .time:nth-last-child(1)::after,.time:nth-last-child(2)::after,.dropdown:nth-last-child(1)::before{
     display: none;
   }
-  .bg-3 p {
+  .block1 p {
     z-index: 4;
     color: #3d087b;
     font-family: "Manrope";
@@ -90,7 +98,7 @@ body {
     top: 1.25rem;
     font-size: 1rem;
   }
-  .digital-clock span {
+  .clock span {
     color: purple;
     font-size: 2.5rem;
     position: absolute;
@@ -112,7 +120,7 @@ body {
     padding-top: 1rem;
     box-sizing: border-box;
   }
-  .timeset {
+  .clocktime {
     background-color: white;
     width: 536px;
     height: 363px;
@@ -148,7 +156,7 @@ body {
     font-family: "Manrope";
     letter-spacing: 1.25px;
   }
-  .goodmorning {
+  .message1 {
     background-color: rgb(255, 255, 255, 0.23);
     width: 536px;
     height: 77px;
@@ -158,7 +166,7 @@ body {
     margin-top: 1rem;
     text-align: center;
   }
-  .goodmorning h1 {
+  .message1 h1 {
     padding: 1.3rem;
     font-size: 1.7rem;
   }
@@ -222,7 +230,7 @@ body {
     gap: 1rem;
     margin-top: 1rem;
   }
-  .greeting {
+  .message2 {
     width: 536px;
     height: 118px;
     font-weight: 900;
@@ -235,16 +243,18 @@ body {
     box-sizing: border-box;
     text-align: center;
   }
-  .greeting-image img{
+  .mor-img img{
     width: 536px;
     height: 380px;
     border-radius: 10px;
     display: inline-block;
     padding-top: 1rem;
   }
-  .greeting-container{
+ 
+  .displaybox{
     padding:4rem 1rem;
   }
-  .sub-container2{
-    display: flex;
-  }
+ 
+.logo{
+  margin-left: 40px;
+}
