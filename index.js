@@ -35,6 +35,7 @@ const clock=()=>{
     seconds[0].innerText=second;
     
     }
+
     
         const setAlarm=()=>{
         let timing=document.getElementsByClassName("timing");
@@ -51,34 +52,34 @@ const clock=()=>{
         timing[3].innerText=night.options[night.selectedIndex].text;
     
         if((hours===parseInt(wakeup.value))){
-        let greeting=document.getElementById("goodmorning");
-        let message=document.getElementById("greeting");
-        let image=document.getElementById("greeting-image");
+        let greeting=document.getElementById("message1");
+        let message=document.getElementById("message2");
+        let image=document.getElementById("mor-img");
         image.src="./9.jpg";
         message.innerText="GRAB SOME HEALTHY BREAKFAST!!!"
         greeting.innerText="GOOD MORNING!! WAKEUP!!";
     }
     
         if((hours===parseInt(lunch.value))){
-        let greeting=document.getElementById("goodmorning");
-        let message=document.getElementById("greeting");
-        let image=document.getElementById("greeting-image");
+        let greeting=document.getElementById("message1");
+        let message=document.getElementById("message2");
+        let image=document.getElementById("mor-img");
         image.src="./lunch.png";
         message.innerText="LET'S HAVE SOME LUNCH !!"
         greeting.innerText="GOOD AFTERNOON !! TAKE SOME SLEEP";
     }
     
         if((hours===parseInt(tea.value))){
-        let greeting=document.getElementById("goodmorning");
-        let message=document.getElementById("greeting");
-        let image=document.getElementById("greeting-image");
+        let greeting=document.getElementById("message1");
+        let message=document.getElementById("message2");
+        let image=document.getElementById("mor-img");
         image.src="./cofee.png";
         message.innerText="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!"
         greeting.innerText="GOOD EVENING!!";
     }
     
         if((hours===parseInt(night.value))){
-            let greeting=document.getElementById("goodmorning");
+            let greeting=document.getElementById("message1");
             let message=document.getElementById("greeting");
             let image=document.getElementById("greeting-image");
             image.src="./gn.jpg";
